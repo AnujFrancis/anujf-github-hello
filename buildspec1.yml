@@ -4,3 +4,8 @@ phases:
     commands:
       #- echo "This is from first inside" > file2efs.txt
       - ls -ltr
+artifacts:
+  files:
+    - '**/*'
+  name: web-mapviewer/BUILD_TYPE_3/APP_VERSION
+
