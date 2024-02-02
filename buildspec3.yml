@@ -1,0 +1,6 @@
+version: 0.2
+phases: 
+  build:
+    commands:
+      #- echo "This is from first inside" > file4.txt
+      - ls -ltr
