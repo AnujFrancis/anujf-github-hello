@@ -1,0 +1,16 @@
+version: 0.2
+phases: 
+  build:
+    commands:
+      #- echo "This is from first inside" > file2.txt
+      #- echo "This is from second inside" > file3.txt
+      - ls -ltr
+artifacts:
+  files:
+    - '**/*'
+  name: web-mapviewer/BUILD_TYPE_1/APP_VERSION
+  secondary-artifacts:
+    artifact1:
+      files:
+        - '**/*'
+      name: web-mapviewer/BUILD_TYPE_2/APP_VERSION
