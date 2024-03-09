@@ -1,6 +1,11 @@
-version: 0.2
-phases: 
- pre_build:
+phases:
+  pre_build:
     commands:
-      #- echo "This is from first inside" > file2efs.txt
-      - ls -ltr
+      - echo 'prebuild'
+  build:
+    commands:
+      - echo 'Compiling the Java Code'
+      - sleep 60
+  post_build:
+    commands:
+      - echo "Would deploy here"
