@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - echo 'Compiling the Java Code'
-      - sleep 60
+      - sleep 30
   post_build:
     commands:
       - echo "Would deploy here"
